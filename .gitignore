@@ -1,0 +1,36 @@
+# بيئات بايثون
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+python.exe
+pythonw.exe
+
+# بيئات التطوير
+.vscode/
+.idea/
+
+# ملفات نظام
+.DS_Store
+Thumbs.db
+
+# بيئة Flask
+instance/
+.webassets-cache
+
+# ملفات تسجيل
+*.log
+
+# ملفات البيئة
+.env
+.env.local
+
+# قاعدة البيانات
+*.db
+*.sqlite3
+
+# ملفات التخزين المؤقت
+*.cache
