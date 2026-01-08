@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Smart Tools</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <button id="menuToggle"><i class="fas fa-bars"></i></button>
+        <nav id="navMenu" class="nav-menu">
+            <a href="{{ url_for('index') }}">الرئيسية</a>
+            <a href="{{ url_for('password_check') }}">فحص كلمة المرور</a>
+            <a href="{{ url_for('password_generate') }}">توليد كلمة مرور</a>
+            <a href="{{ url_for('ip_info') }}">معلومات IP</a>
+        </nav>
+        <div class="theme-switch" id="themeToggle">
+            <button><i class="fas fa-moon"></i> <span>الوضع الليلي</span></button>
+        </div>
+    </header>
+
+    <main>
+        <h1>مرحبًا بك في Arabic Smart Tools</h1>
+        <p>اختر الأداة التي تريد استخدامها من القائمة أعلاه.</p>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
