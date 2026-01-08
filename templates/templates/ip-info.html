@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="tool-section">
+    <h2>🌐 معلومات IP الخاصة بك</h2>
+    <button onclick="getIPInfo()">عرض معلومات IP</button>
+    <pre id="ipResult"></pre>
+</section>
+
+<script>
+async function getIPInfo() {
+    const result = document.getElementById("ipResult");
+    result.textContent = "جاري التحميل...";
+    try {
+        const response = await fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE");
+        const data = await response.json();
+        result.textContent = JSON.stringify(data, null, 2);
+        showAlert("تم جلب معلومات IP بنجاح ✅", "success");
+    } catch (err) {
+        result.textContent = "";
+        showAlert("تعذر الحصول على معلومات IP ❌", "error");
+    }
+}
+</script>
+{% endblock %}
