@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ===== قسم الترحيب ===== -->
+<section class="hero">
+    <div class="container">
+        <h1>مرحبًا بك في أدوات ذكية عربية! 🚀</h1>
+        <p>منصة عربية مجانية تقدم أدوات ذكية وأدوات أمن سيبراني مبسطة.</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('password_check') }}" class="btn btn-primary">فحص كلمة المرور</a>
+            <a href="{{ url_for('password_generate') }}" class="btn btn-secondary">توليد كلمة المرور</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== قسم الأدوات ===== -->
+<section class="tools">
+    <div class="container">
+        <h2>أدواتنا الشائعة</h2>
+        <div class="tool-grid">
+
+            <div class="tool-card" data-scroll>
+                <img src="{{ url_for('static', filename='images/password_check.webp') }}" alt="فحص كلمة المرور">
+                <h3>فحص كلمة المرور</h3>
+                <p>تحقق من قوة كلمات المرور الخاصة بك بطريقة آمنة وسريعة.</p>
+                <a href="{{ url_for('password_check') }}" class="btn btn-small">ابدأ الآن</a>
+            </div>
+
+            <div class="tool-card" data-scroll>
+                <img src="{{ url_for('static', filename='images/password_generate.webp') }}" alt="توليد كلمة المرور">
+                <h3>توليد كلمة المرور</h3>
+                <p>أنشئ كلمات مرور قوية ومعقدة تلقائيًا لحماية حساباتك.</p>
+                <a href="{{ url_for('password_generate') }}" class="btn btn-small">ابدأ الآن</a>
+            </div>
+
+            <div class="tool-card" data-scroll>
+                <img src="{{ url_for('static', filename='images/ip_info.webp') }}" alt="معلومات IP">
+                <h3>معلومات IP</h3>
+                <p>اعرف موقعك الجغرافي ومعلومات الشبكة الخاصة بك بسهولة.</p>
+                <a href="{{ url_for('ip_info') }}" class="btn btn-small">ابدأ الآن</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== قسم نصائح ===== -->
+<section class="tips">
+    <div class="container">
+        <h2>نصائح للحماية</h2>
+        <div class="tip-grid">
+
+            <div class="tip-card" data-scroll>
+                <i class="fas fa-lock"></i>
+                <p>استخدم كلمات مرور قوية وفريدة لكل حساب.</p>
+            </div>
+
+            <div class="tip-card" data-scroll>
+                <i class="fas fa-shield-alt"></i>
+                <p>فعّل المصادقة الثنائية كلما أمكن.</p>
+            </div>
+
+            <div class="tip-card" data-scroll>
+                <i class="fas fa-user-secret"></i>
+                <p>تجنب مشاركة معلوماتك الشخصية على الإنترنت.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
