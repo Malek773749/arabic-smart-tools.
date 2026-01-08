@@ -1,0 +1,18 @@
+# الأساسيات
+Flask==2.3.3
+requests==2.31.0
+python-dotenv==1.0.0
+
+# تحسين الصور
+Pillow==10.0.0
+
+# الإنتاج
+gunicorn==21.2.0
+
+# التطوير (اختياري)
+# Flask-CORS==4.0.0
+# Flask-Compress==1.14
+
+# الاختبارات (اختياري)
+# pytest==7.4.3
+# pytest-cov==4.1.0
