@@ -1,0 +1,10 @@
+{
+  "name": "أدوات ذكية عربية",
+  "short_name": "Arabic Tools",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4361ee",
+  "lang": "ar",
+  "dir": "rtl"
+}
