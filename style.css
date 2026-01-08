@@ -1,0 +1,43 @@
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #4361ee;
+    color: white;
+    padding: 20px;
+}
+
+.hero {
+    padding: 40px;
+}
+
+button {
+    background: #4361ee;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #364fc7;
+}
+
+/* تنبيهات */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+.alert-success { background: green; }
+.alert-error { background: red; }
